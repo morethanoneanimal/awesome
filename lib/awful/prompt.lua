@@ -538,6 +538,7 @@ function prompt.run(args, textbox, exe_callback, completion_callback,
 
     -- Build the hook map
     for _,v in ipairs(args.hooks or {}) do
+        --wtf
         assert(#v == 3)
         if #v == 3 then
             local _,key,callback = unpack(v)
